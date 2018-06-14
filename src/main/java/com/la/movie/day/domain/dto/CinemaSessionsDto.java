@@ -10,7 +10,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Setter
 @Getter
-public class CinemaSessions implements Serializable {
+public class CinemaSessionsDto implements Serializable {
     private String name;
     private String hall;
     private Date date;

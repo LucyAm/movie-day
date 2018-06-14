@@ -1,21 +1,20 @@
 package com.la.movie.day.domain.dto;
 
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @NoArgsConstructor
 @Getter
 @Setter
-public class MovieHeader implements Serializable {
-
-    private Long id;
+public class MovieSessionsDto implements Serializable {
+    private long id;
+    private long cinemaId;
     private String name;
-    private String posterUrl;
-    private String genre;
-    private String nowUpcoming;
-
+    private int ticketPrice;
+    private String hall;
+    private Date date;
 }
